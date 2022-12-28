@@ -45,7 +45,6 @@ a:active { text-decoration: none; }
 
 .main-header {
     text-align: center;
-    padding-bottom: -5px;
 }
 
 .sub-header {
@@ -53,18 +52,60 @@ a:active { text-decoration: none; }
     color: gray;
 }
 
-.languages {
-    margin-left: 15%;
-    padding-bottom: 3%;
+.skills-header, #projects-header {
+    padding-top: 125px;
+    padding-bottom: 5px;
+    text-align: center;
 }
 
-.languages-header, #projects-header {
+.skills-container {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.languages, .frameworks, .dbh, .tools {
+    padding-right: 10px;
+    text-align: left;
+}
+
+.col-sm {
+    border: 3px solid;
+    border-radius: 8px;
+}
+
+.row {
+    justify-content: center;
+}
+
+.progress {
+    float: right;
+    width: 50%;
+    height: 2em;
+    border: 1px solid black;
+}
+  
+.bar {
+    width: 0%;
+    background-color: green;
     text-align: center;
-    padding-top: 125px;
+    line-height: 2em;
+
+    transition-property: width;
+    transition-timing-function: linear;
+}  
+
+.progress {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+
+button {
+    margin-top: 1em;
 }
 
 .card-body {
-    margin: 20px;
+    margin: 0px 20px 20px 20px;
     border: 3px solid;
     border-radius: 10px;
     background-color: transparent;
@@ -78,7 +119,7 @@ a:active { text-decoration: none; }
     height: 56px;
     padding: 5px;
     border-radius: 45px;
-    border: 3px solid rgb(58, 50, 50);
+    border: 3px solid white;
     background-color: #191919;
     overflow: hidden;
     transition: all .5s cubic-bezier(0.6, -0.28, 0.735, 0.045);     

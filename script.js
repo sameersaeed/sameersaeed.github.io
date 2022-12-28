@@ -26,9 +26,32 @@ function toggleLightMode() {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
     });
 });
+
+progressBars = [".javascript", ".java", ".c", ".cpp", ".python", ".go", ".dotnet", 
+                ".angularjs", ".react", ".sqlserver", ".mysql", ".mongodb", ".postgresql",
+                ".aws", ".azure", ".git", ".selenium", ".jasmine"];
+
+var $bars = $(".bar");
+ $bars.eq(0).animate({width: "80%"}, 2500);   // js
+ $bars.eq(1).animate({width: "95%"}, 2500);   // java
+ $bars.eq(2).animate({width: "70%"}, 2500);   // c
+ $bars.eq(3).animate({width: "85%"}, 2500);   // c++
+ $bars.eq(4).animate({width: "90%"}, 2500);   // python
+ $bars.eq(5).animate({width: "70%"}, 2500);   // golang
+ $bars.eq(6).animate({width: "65%"}, 2500);   // .net
+ $bars.eq(7).animate({width: "50%"}, 2500);   // angular
+ $bars.eq(8).animate({width: "60%"}, 2500);   // react
+ $bars.eq(9).animate({width: "75%"}, 2500);   // microsoft sql server
+ $bars.eq(10).animate({width: "80%"}, 2500);  // mysql
+ $bars.eq(11).animate({width: "80%"}, 2500);  // mongodb
+ $bars.eq(12).animate({width: "65%"}, 2500);  // postgresql
+ $bars.eq(13).animate({width: "70%"}, 2500);  // aws
+ $bars.eq(14).animate({width: "60%"}, 2500);  // azure
+ $bars.eq(15).animate({width: "80%"}, 2500);  // git
+ $bars.eq(16).animate({width: "60%"}, 2500);  // selenium
+ $bars.eq(17).animate({width: "40%"}, 2500);  // jasmine
