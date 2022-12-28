@@ -99,10 +99,10 @@ a:active { text-decoration: none; }
     transition: none !important;
 }
 
-
 button {
     margin-top: 1em;
 }
+
 
 .card-body {
     margin: 0px 20px 20px 20px;
@@ -182,12 +182,11 @@ button {
     background-color: #fff;
 }
 
-.footer {
-    position: fixed;
+footer {
     text-align: left;
-    bottom: 0;
     width: 100%;
-    padding: .5% 0% 0% 0.5%;
+    padding: 0.65% 0% 0.65% 1.25%;
     font-size: 1.33em;
     border-top: 1px solid rgba(255, 255, 255, 0.125);
+    vertical-align: middle;
 }

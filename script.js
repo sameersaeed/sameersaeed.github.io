@@ -32,10 +32,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-progressBars = [".javascript", ".java", ".c", ".cpp", ".python", ".go", ".dotnet", 
-                ".angularjs", ".react", ".sqlserver", ".mysql", ".mongodb", ".postgresql",
-                ".aws", ".azure", ".git", ".selenium", ".jasmine"];
-
 var $bars = $(".bar");
  $bars.eq(0).animate({width: "80%"}, 2500);   // js
  $bars.eq(1).animate({width: "95%"}, 2500);   // java
