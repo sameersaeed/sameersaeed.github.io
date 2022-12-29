@@ -13,6 +13,9 @@ function toggleLightMode() {
     var element = document.body;
     var solid = document.querySelectorAll(".fa-solid");
     var brands = document.querySelectorAll(".fa-brands");
+    var bordSkills = document.querySelectorAll(".col-sm");
+    var bordProjs = document.querySelectorAll(".card-body");
+    var bordFooter = document.querySelector("footer");
 
     element.classList.toggle("light-mode");
     for(var i=0; i<solid.length; i++){
@@ -21,6 +24,14 @@ function toggleLightMode() {
     for(var i=0; i<brands.length; i++){
         brands[i].classList.toggle("light-mode");
     }
+    for(var i=0; i<bordSkills.length; i++){
+        bordSkills[i].classList.toggle("light-mode");
+    }
+    for(var i=0; i<bordProjs.length; i++){
+        bordProjs[i].classList.toggle("light-mode");
+    }
+    bordFooter.classList.toggle("light-mode");
+
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
