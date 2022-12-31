@@ -43,22 +43,38 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-var $bars = $(".bar");
- $bars.eq(0).animate({width: "80%"}, 2500);   // js
- $bars.eq(1).animate({width: "95%"}, 2500);   // java
- $bars.eq(2).animate({width: "70%"}, 2500);   // c
- $bars.eq(3).animate({width: "85%"}, 2500);   // c++
- $bars.eq(4).animate({width: "90%"}, 2500);   // python
- $bars.eq(5).animate({width: "70%"}, 2500);   // golang
- $bars.eq(6).animate({width: "65%"}, 2500);   // .net
- $bars.eq(7).animate({width: "50%"}, 2500);   // angular
- $bars.eq(8).animate({width: "60%"}, 2500);   // react
- $bars.eq(9).animate({width: "75%"}, 2500);   // microsoft sql server
- $bars.eq(10).animate({width: "80%"}, 2500);  // mysql
- $bars.eq(11).animate({width: "80%"}, 2500);  // mongodb
- $bars.eq(12).animate({width: "65%"}, 2500);  // postgresql
- $bars.eq(13).animate({width: "70%"}, 2500);  // aws
- $bars.eq(14).animate({width: "60%"}, 2500);  // azure
- $bars.eq(15).animate({width: "80%"}, 2500);  // git
- $bars.eq(16).animate({width: "60%"}, 2500);  // selenium
- $bars.eq(17).animate({width: "40%"}, 2500);  // jasmine
+var bars = $(".bar");
+bars.eq(0).animate({width: "80%"}, 2500);   // js
+bars.eq(1).animate({width: "90%"}, 2500);   // java
+bars.eq(2).animate({width: "65%"}, 2500);   // c
+bars.eq(3).animate({width: "80%"}, 2500);   // c++
+bars.eq(4).animate({width: "85%"}, 2500);   // python
+bars.eq(5).animate({width: "67.5%"}, 2500);   // golang
+bars.eq(6).animate({width: "65%"}, 2500);   // .net
+bars.eq(7).animate({width: "50%"}, 2500);   // angular
+bars.eq(8).animate({width: "60%"}, 2500);   // react
+bars.eq(9).animate({width: "75%"}, 2500);   // microsoft sql server
+bars.eq(10).animate({width: "80%"}, 2500);  // mysql
+bars.eq(11).animate({width: "80%"}, 2500);  // mongodb
+bars.eq(12).animate({width: "65%"}, 2500);  // postgresql
+bars.eq(13).animate({width: "70%"}, 2500);  // aws
+bars.eq(14).animate({width: "60%"}, 2500);  // azure
+bars.eq(15).animate({width: "80%"}, 2500);  // git
+bars.eq(16).animate({width: "60%"}, 2500);  // selenium
+bars.eq(17).animate({width: "40%"}, 2500);  // jasmine
+
+$.each(bars, function(i) {
+    var greenList = [0, 1, 3, 4, 9, 10, 11, 13, 15];
+    var yellowList = [2, 5, 6, 8, 12, 14, 16];
+    var finder = $("body").find(".bar").eq(i);
+    
+    if(greenList.includes(i)){
+        finder.addClass("green");
+    }
+    else if(yellowList.includes(i)) {
+        finder.addClass("yellow");
+    }
+    else{
+        finder.addClass("red");
+    }
+});
