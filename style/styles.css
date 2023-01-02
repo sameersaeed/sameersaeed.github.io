@@ -36,26 +36,31 @@ a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
 
-.main-header { text-align: center; }
+.main-header, .project-header { text-align: center; padding-top: 35px; }
 
-.sub-header {
+.project-subheader { font-size: 24px; }
+
+.sub-header, .project-subheader {
     text-align:center;
     color: gray;
 }
 
-.aboutme-header, .skills-header, .projects-header {
-    padding-top: 125px;
+.aboutme-header, .project-header, .skills-header, #projects-header {
     padding-bottom: 5px;
     text-align: center;
 }
 
 .languages-header, .frameworks-header, .dbh-header, .tools-header {
+    padding: 10px 0px 5px 0px;
     font-size: 1.5em;
     text-align: center;
     text-decoration: underline red;
 }
 
-.aboutme-container { 
+.title, .skills-container, .aboutme-text, .project-text,
+#projects-container, #doc-container { padding-bottom: 125px; }
+
+.aboutme-container, .project-container { 
     justify-content: center; 
     padding: 0vw 10vw 0vw 10vw;
 }
@@ -64,6 +69,11 @@ a:active { text-decoration: none; }
     font-size: 1.125em;    
     color: gray;
     text-align: center;
+}
+
+.project-text {
+    font-size: 1.125em;    
+    float: left;
 }
 
 .skills-container {
@@ -89,6 +99,7 @@ a:active { text-decoration: none; }
 .container {
     display: flex;
     justify-content: center;
+    padding: 5px;
 }
 
 .row { justify-content: center; }
@@ -124,7 +135,6 @@ i[class^='devicon'], i[class*='devicon'] {
 
 button { margin-top: 1em; }
 .col-8 { padding: 10px; margin-top: 20px; }
-
 .col-lg { padding-bottom: 50px; }
 
 .card-deck {    
@@ -224,4 +234,10 @@ footer {
     font-size: 1.33em;
     border-top: 1px solid rgba(255, 255, 255, 0.125);
     vertical-align: middle;
+}
+
+.img {
+    width: 66%;
+    height: 50%;
+    justify-content: center;
 }
