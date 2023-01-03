@@ -13,25 +13,98 @@
 <body>
     <div style="min-height:100vh; display:flex; flex-direction:column; justify-content:space-between;"">
         <nav>
-            <ul>
-            <li><a href="../index.html"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="../index.html#projects-header"><i class="fa-solid fa-diagram-project"></i></a></li>
-                <li><a href="mailto: sameer.saeed@live.ca"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="https://linkedin.com/in/sameer-saeed-525713217"><i class="fa-brands fa-linkedin"></i></a></li>
-                </ul>
+            <a href="../index.html"><i class="fa-solid fa-house"></i></a></li>
+            <a href="../index.html#projects-header"><i class="fa-solid fa-diagram-project"></i></a></li>
+            <a href="mailto: sameer.saeed@live.ca"><i class="fa-solid fa-envelope"></i></a></li>
+            <a href="https://linkedin.com/in/sameer-saeed-525713217"><i class="fa-brands fa-linkedin"></i></a></li>
         </nav>
         <div class="project-container">
             <h1 class="project-header">Order Management System</h1>
-            <h1 class="project-subheader">Javascript,  HTML/CSS,  PHP,  AWS</h1>
+            <h1 class="project-subheader">Javascript,  HTML/CSS,  PHP,  MySQL,  AWS</h1>
             <p class="project-text">
-                (rough)
-                <br>
-                basic flow chart of how site operates
-                <img class="img" src="../img/p1Flow.jpg"></img>
+                <h1>(rough)</h1>
                 <br><br>
-                how the backend works
+                <p class="project-p">Goal<p>
+                The goal of this project was to create a system in which users could 
+                organize order data, whether it be for personal or business use. 
                 <br><br>
 
+                <p class="project-p">Target userbase</p>
+                The target user for this system is someone who has transactions that they wish to keep track of.
+                The site was designed with this in mind, so there are various options for different types of orders to be stored.
+                <br><br>
+
+                <p class="project-p">How it works</p>
+                <ul class="project-bullets">
+                    <li>
+                        Users are directed to a home screen through which they can choose to either log in or create a new account.
+                    </li>
+                    <li>
+                        In order to create a new account, users must select a username and password, as well as verify their
+                        password to ensure that no mistakes are made. New user data then gets saved to the system's database.
+                    </li>
+                    <li>
+                        To login, users simply input their username and password which are then verified by the database, 
+                        allowing the user to login.
+                    </li>
+                    <li>
+                        Once logged in, users are taken to their personal home page, where they can create new orders as well 
+                        as view and modify/delete previously created orders.
+                    </li>
+                </ul>
+                See Figure 1 below for a pictoral description of how the site works.
+                <br><br><br>
+
+                <img class="img" src="../img/p1Flow.jpg"></img>
+                <br>
+                Figure 1 - Flow chart displaying how site operates<br>
+                <br><br>
+
+                <p class="project-p">Languages used</p>
+                This site uses <b>HTML/CSS</b>, <b>Bootstrap</b> and <b>Javascript</b> for its front-end design.
+                <br><b>HTML/CSS</b> is used in conjunction with <b>Bootstrap</b> in order to give the site a clean and modern look.<br>
+                <br>Javascript is used in order to allow the user to make SQL MODIFY and DELETE queries through the front-end using the
+                    Tabledit JS library.
+                <br>This allows users to modify/delete data within their transactions table.<br> 
+                <br><br>
+                
+                <br>A <b>MySQL</b> database was also used to store data and allow users to access and modify their data through queries. SQL queries
+                    are made in the back-end using <b>PHP</b>.<br>
+                <br>The site was hosted as an <b>Amazon Elastic Compute Cloud (EC2)</b> instance using <b>Amazon Web Services (AWS)</b>. 
+                    <b>LAMP</b>, packaged by <b>Bitnami for AWS Cloud</b>, was
+                    used to provide a quick-to-launch development environment. 
+                <br>The database capacity is up to 10GiB via an <b>Amazon Elastic Block Storage (EBS)</b> volume which hosts the data, allowing for 1000s of data instances
+                    to be stored and quickly accessed on the system. 
+                <br><br>
+
+                <b>How the database works</b>
+                <ul class="project-bullets">
+                    <li> 
+                        To login and display orders, <b>SELECT</b> queries are made in the database. <b>JOIN</b> is used to group all of a user's 
+                        orders together at once.<br>
+                    </li>
+                    <li> 
+                        To register a user and modify orders, <b>INSERT</b> queries are made in the database.                            
+                    </li>
+                    <li> 
+                        To delete orders, <b>DELETE</b> queries are made in the database.                            
+                    </li>
+                </ul>
+                <br><br><br>
+
+                <img class="img" src="../img/p1Backend.jpg"></img>
+                <br>
+                Figure 2 - How the front-end works with the back-end<br>
+                <br><br>
+
+                <p class="project-p">Future plans</p>
+                <ul class="project-bullets">
+                    <li>Add section to calculate profits / debt for users</li>
+                    <li>Add more user options (home page customizability, profile pictures), increase user security (password reset, 2FA),
+                        allow interaction between users (followers, groups, messaging), etc.</li>
+                    <li>Improve front-end design (site name, logo, better design)</li>
+                </ul>
+                <br><br>
             </p>
         </div>
         <div class="dark-light-toggle">

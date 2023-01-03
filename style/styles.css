@@ -7,37 +7,28 @@ body {
     box-sizing: border-box;
 }
 
-.fa-solid, .fa-brands { color: white; }
-
-body::-webkit-scrollbar { display: none; }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    cursor: pointer;
-}
-
 i { font-size: 30px; }
 
-li { float: left; }
+i[class^='devicon'], i[class*='devicon'] {
+    width: 100px;
+    height: 100px;
+    margin: 0% 3vh 2.5vh 0%;
+}
+
   
-li a {
-    display: block;
+a {
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.fa-solid, .fa-brands { color: white; }
+body::-webkit-scrollbar { display: none; }
 a:hover { text-decoration: none; }
-
 a:active { text-decoration: none; }
-
 .main-header, .project-header { text-align: center; padding-top: 35px; }
-
 .project-subheader { font-size: 24px; }
 
 .sub-header, .project-subheader {
@@ -65,16 +56,32 @@ a:active { text-decoration: none; }
     padding: 0vw 10vw 0vw 10vw;
 }
 
-.aboutme-text {
-    font-size: 1.125em;    
-    color: gray;
-    text-align: center;
+.project-p {
+    margin-bottom: 0px;
+    color: lightgray;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .project-text {
     font-size: 1.125em;    
     float: left;
 }
+
+.project-bullets {
+    list-style-type: circle;
+}
+
+.seemore {
+    color: blue;
+}
+
+.aboutme-text {
+    font-size: 1.125em;    
+    color: gray;
+    text-align: left;
+}
+
 
 .skills-container {
     padding-left: 3%;
@@ -93,7 +100,7 @@ a:active { text-decoration: none; }
 
 .col-lg.test {
     border-radius: 8px;
-    margin: 50px;
+    margin: 0px 50px 50px 50px;
 }
 
 .container {
@@ -108,12 +115,8 @@ a:active { text-decoration: none; }
     width: 30vw;
     height: 3em;
     border: rgba(255, 255, 255, 0.125);
-}
-  
-i[class^='devicon'], i[class*='devicon'] {
-    width: 100px;
-    height: 100px;
-    margin: 0% 3vh 2.5vh 0%;
+    -webkit-transition: none !important;
+    transition: none !important;
 }
 
 .bar {
@@ -128,10 +131,6 @@ i[class^='devicon'], i[class*='devicon'] {
 .yellow { background-color: rgb(255, 208, 0); color: black; }
 .red { background-color: rgb(206, 40, 40); }
 
-.progress {
-    -webkit-transition: none !important;
-    transition: none !important;
-}
 
 button { margin-top: 1em; }
 .col-8 { padding: 10px; margin-top: 20px; }
@@ -182,6 +181,7 @@ button { margin-top: 1em; }
 .light-mode .green, .red { color: white; }
 .light-mode .col-8, .col-lg.test, .card { border: 3px solid rgb(58, 50, 50); }
 .light-mode:-webkit-any(footer) { border-top: 1px solid rgba(0, 0, 0, 1); }
+.light-mode .project-p { color: darkslategray}
 
 .circle {
     border-radius: 50%;
