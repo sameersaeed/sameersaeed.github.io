@@ -2,253 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="style/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/cc17318182.js" crossorigin="anonymous"></script>
+    <title>Sameer Saeed</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div style="min-height:100vh; display:flex; flex-direction:column; justify-content:space-between;"">
-        <nav>
-            <a href=""><i class="fa-solid fa-house"></i></a></li>
-            <a href="#projects-header"><i class="fa-solid fa-diagram-project"></i></a></li>
-            <a href="mailto: sameer.saeed@live.ca"><i class="fa-solid fa-envelope"></i></a></li>
-            <a href="https://linkedin.com/in/sameer-saeed-525713217"><i class="fa-brands fa-linkedin"></i></a></li>
-        </nav>
-        <div class="title">
-            <h1 class="main-header">Sameer Saeed</h1>
-            <h2 class="sub-header">3rd year CS student @ University of Windsor</h2>
-        </div>
-        <div class="aboutme-container">
-            <h1 class="aboutme-header">about me</h1>
-            <p class="aboutme-text">
-                Hi, my name is Sameer.
+    <div class="top-section">
+        <div class="content">
+            <h1>SAMEER SAEED</h1>
+            <div class="about-me">
+                <p>
+                    Hi, I'm Sameer. I am a software engineer based in Ontario, Canada. I’m always curious and enjoy learning new things, especially when it comes to tech.
+                </p>
                 <br>
-                I am a third year student at the University of Windsor studying Computer Science.
-                <br><br>
-                My experience primarily lies in web development, scripting, and object-oriented programming.
-                <br><br>
-                Some of my interests include Big Data, Automation, Database & Cloud, Emulation, and Web Development. 
-                <br><br>
-                Below you can find technologies that I work with and some of the projects that I have
-                created using them.
-            </p>
-        </div>
-        <div class="skills-container">
-            <h1 class="skills-header">familiarity of technologies</h1>
-            <p style="margin-left: 40px">* ranked by how often i use them, not skill level</p>
-            <div class="row">
-                <div class="col-lg test">
-                    <h1 class="languages-header">languages</h1>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-javascript-plain colored"></i></h4>
-                        <div class="progress">
-                            <div class="bar javascript">JavaScript</div>
-                        </div>    
-                    </div>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-java-plain colored"></i></h4>
-                        <div class="progress">
-                            <div class="bar java">Java</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-c-plain colored"></i></h4>        
-                        <div class="progress">
-                            <div class="bar c">C</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-cplusplus-plain colored"></i></h4>        
-                        <div class="progress">
-                            <div class="bar cpp">C++</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-python-plain"></i></h4>
-                        <div class="progress">
-                            <div class="bar python">Python</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-go-original-wordmark colored"></i></h4>   
-                        <div class="progress">
-                            <div class="bar go">Go</div>
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-lg test">
-                    <h1 class="frameworks-header">frameworks</h1>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-dotnetcore-plain colored"></i></h4>
-                        <div class="progress">
-                            <div class="bar dotnet">.NET</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-angularjs-plain colored"></i></h4>
-                        <div class="progress">
-                            <div class="bar angularjs">Angular</div>
-                        </div>                    
-                    </div>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-react-original colored"></i></h4>
-                        <div class="progress">
-                            <div class="bar react">React</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg test">
-                    <h1 class="dbh-header">db / hosting</h1>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-microsoftsqlserver-plain colored"></i></h4>
-                        <div class="progress">
-                            <div class="bar sqlserver">Microsoft SQL Server</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-mysql-plain colored"></i></h4>
-                        <div class="progress">
-                            <div class="bar mysql">MySQL</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-mongodb-plain colored"></i></h4>
-                        <div class="progress">
-                            <div class="bar mongodb">MongoDB</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-postgresql-plain colored"></i></h4>
-                        <div class="progress">
-                            <div class="bar postgresql">PostgreSQL</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-amazonwebservices-plain-wordmark colored"></i></h4>
-                        <div class="progress">
-                            <div class="bar aws">AWS</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-azure-plain-wordmark colored"></i></h4>
-                        <div class="progress">
-                            <div class="bar azure">Azure</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg test">
-                    <h1 class="tools-header">tools</h1>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-git-plain colored"></i></h4>
-                        <div class="progress">
-                            <div class="bar git">Git</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-selenium-original colored"></i></h4>
-                        <div class="progress">
-                            <div class="bar selenium">Selenium</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <h4 class="inner"><i class="devicon-jasmine-plain colored"></i></h4>
-                        <div class="progress">
-                            <div class="bar jasmine">Jasmine</div>
-                        </div>                            
-                    </div>
-                </div>
+                <p>
+                    When I’m not coding, I like to explore different interests, whether it’s reading, working on new projects, or just figuring out how things work!
+                </p>
             </div>
         </div>
-        <div class="projects">
-            <h1 id="projects-header">projects</h1>
-            <div class="row container-fluid justify-content-center">
-                <div class="card-deck">
-                    <div class="col-lg d-flex">
-                        <div class="card">
-                            <div class="card-body flex-fill">
-                                <h5 class="card-title">Order Management System</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Javascript,  HTML/CSS,  PHP,  MySQL,  AWS</h6>
-                                <p class="card-text">Full stack CRUD application for tracking and managing personal orders</p>
-                            </div>
-                            <div class="card-footer">
-                                <a class="seemore" href="src/project1.html" class="card-link">See more</a>
-                                <a href="https://ec2-18-223-214-216.us-east-2.compute.amazonaws.com/order-manager/index.php" class="card-link text-warning">Demo</a>
-                                <a style="float: right; padding: 10px 0px 0px 15px;" href="https://github.com/sameersaeed/order-manager" <i class="fa-brands fa-github"></i></a>
-                            </div>    
-                        </div>
-                    </div>
-                    <div class="col-lg d-flex">
-                        <div class="card">
-                            <div class="card-body flex-fill">
-                                <h5 class="card-title">Stock / Crytocurrency Web API</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Javascript, HTML/CSS</h6>
-                                <p class="card-text">Outputs line chart displaying price info of inputted stock / cryptocurrency<br></p>    
-                            </div>
-                            <div class="card-footer" style="border-top: 0px">
-                                <a class="seemore" href="src/project2.html" class="card-link">See more</a>
-                                <a href="https://sameersaeed.github.io/stock-crypto-lookup-site/src/index.html" class="card-link text-warning">Demo</a>
-                                <a style="float: right; padding: 10px 0px 0px 15px;" href="https://github.com/sameersaeed/stock-crypto-lookup-site" <i class="fa-brands fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg d-flex">
-                        <div class="card">
-                            <div class="card-body flex-fill">
-                                <h5 class="card-title">Countries Web API</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Javascript, HTML/CSS</h6>
-                                <p class="card-text">Displays information about any country in the world, including its population, capital city, current time, weather, etc.</p>    
-                            </div>
-                            <div class="card-footer">
-                                <a class="seemore" href="src/project3.html" class="card-link">See more</a>
-                                <a href="https://sameersaeed.github.io/country-info-web-API/src/" class="card-link text-warning">Demo</a>
-                                <a style="float: right; padding: 10px 0px 0px 15px;" href="https://github.com/sameersaeed/country-info-web-API" <i class="fa-brands fa-github"></i></a>    
-                            </div>                        
-                        </div>
-                    </div>
-                    <div class="col-lg d-flex">
-                        <div class="card">
-                            <div class="card-body flex-fill">
-                                <h5 class="card-title">Chip-8 Interpreter</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">C++, SDL2, CMake</h6>
-                                <p class="card-text">An interpreter for the CHIP-8, which can run classic retro games such as Pong, Tetris, and Space Invaders.</p>    
-                            </div>
-                            <div class="card-footer">
-                                <a class="seemore" href="src/project4.html" class="card-link">See more</a>
-                                <!-- <a href="" class="card-link text-warning">Demo</a> -->
-                                <a style="float: right; padding: 10px 0px 0px 15px;" href="https://github.com/sameersaeed/chip8-interpreter" <i class="fa-brands fa-github"></i></a>    
-                            </div>                        
-                        </div>
-                    </div>
-                    <!--
-                    <div class="col-lg d-flex">
-                        <div class="card">
-                            <div class="card-body flex-fill">
-                                <h5 class="card-title">Project 5</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Languages used</h6>
-                                <p class="card-text">What project does What project does What project does  </p>    
-                            </div>
-                            <div class="card-footer">
-                                <a class="seemore" href="src/project5.html" class="card-link">See more</a>
-                                <a href="" class="card-link text-warning">Demo</a>
-                                <a style="float: right; padding: 10px 0px 0px 15px;" href="https://github.com/sameersaeed" <i class="fa-brands fa-github"></i></a>    
-                            </div>                        
-                        </div>
-                    </div> 
-                    -->
-                </div>
-            </div>
-        </div>
-        <div class="dark-light-toggle">
-            <input type="checkbox"/ onclick="toggleLightMode()">
-            <span class="circle large"></span>
-            <span class="circle small"></span>
-        </div>
-        <footer>© Sameer Saeed 2023</footer>
     </div>
-</body>    
-<script src="scripts/script.js"></script>
+    <div class="bottom-section">
+        <div class="left-side">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <div class="contact-links">
+                    <ul>
+                        <li><a href="https://ca.linkedin.com/in/sameer-saeed-525713217" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/sameersaeed" target="_blank">GitHub</a></li>
+                        <li><a href="mailto:sameer.saeed@live.ca">Email Me</a></li>
+                    </ul>
+                </div>
+                <div class="resume-preview-container">
+                    <a href="https://drive.google.com/file/d/1mv8d67Tzsp_vrHaw0VzlLjGwo8H9pFcY/view?usp=drive_link" target="_blank">
+                        <img src="images/resume.png" class="resume-preview">
+                        <span>Resume</span>
+                    </a>
+                </div>
+            </div>
+            <h2>Experience</h2>
+            <li class="experience-item">
+                <div class="experience-header">
+                    <img src="images/ibm-logo.png" class="company-logo">
+                    <div>
+                        <p><strong>Software Engineer Intern</strong></p>
+                        <span class="experience-dates">May 2023 – Present | Markham, ON</span>
+                    </div>
+                </div>
+                <ul>
+                    <li>Developed a full-stack web app to streamline ticket hand-offs, reducing manual effort by 30%.</li>
+                    <li>Built a Chrome extension to standardize text formatting, boosting notification efficiency by 50%.</li>
+                    <li>Resolved 100+ technical tickets for IBM Sterling OMS, improving proactive monitoring.</li>
+                    <li>Led a session on IBM Certified Containers with Kubernetes for 20+ engineers.</li>
+                </ul>
+            </li>
+        </div>
+        <div class="right-side">
+            <h2>Projects</h2>
+            <ul>
+                <li class="project-item">
+                    <a href="https://github.com/sameersaeed/order-submission-tool" target="_blank">
+                        Order Submission Tool
+                    </a>
+                    <p>
+                        <img src="images/react-logo.png" title="React" class="project-icon">
+                        <img src="images/typescript-logo.png" title="TypeScript" class="project-icon"> 
+                        <img src="images/go-logo.png" title="Go" class="project-icon">
+                        <img src="images/mongodb-logo.png" title="MongoDB" class="project-icon">
+                        <img src="images/html-logo.png" title="HTML" class="project-icon">
+                        <img src="images/css-logo.png" title="CSS" class="project-icon">
+                    </p>
+                </li>
+                <li class="project-item">
+                    <a href="https://github.com/sameersaeed/chip8-emulator" target="_blank">
+                        CHIP-8 Emulator
+                    </a>
+                    <p>
+                        <img src="images/cpp-logo.png" title="C++" class="project-icon"> 
+                        <img src="images/javascript-logo.png" title="JavaScript" class="project-icon"> 
+                        <img src="images/html-logo.png" title="HTML" class="project-icon">
+                        <img src="images/css-logo.png" title="CSS" class="project-icon">
+                    </p>
+                </li>
+                <li class="project-item">
+                    <a href="https://github.com/sameersaeed/password-manager" target="_blank">
+                        Password Manager
+                    </a>
+                    <p>
+                        <img src="images/rust-logo.png" title="Rust" class="project-icon">
+                    </p>
+                </li>
+            </ul>
+            <h2>Open Source Contributions</h2>
+            <ul>
+                <li class="project-item">
+                    <a href="https://github.com/containerd/containerd/commits/main?author=sameersaeed" target="_blank">
+                        <img src="images/containerd-logo.png" class="project-logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
 </html>
