@@ -7,100 +7,97 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="top-section">
-        <div class="content">
-            <h1>SAMEER SAEED</h1>
-            <div class="about-me">
-                <p>
-                    Hi, I'm Sameer. I am a software engineer based in Ontario, Canada. I’m always curious and enjoy learning new things, especially when it comes to tech.
-                </p>
-                <br>
-                <p>
-                    When I’m not coding, I like to explore different interests, whether it’s reading, working on new projects, or learning more about how things work!
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="bottom-section">
-        <div class="left-side">
-            <h2>Contact</h2>
-            <div class="contact-container">
-                <div class="contact-links">
-                    <ul>
-                        <li><a href="https://ca.linkedin.com/in/sameer-saeed-525713217" target="_blank">LinkedIn</a></li>
-                        <li><a href="https://github.com/sameersaeed" target="_blank">GitHub</a></li>
-                        <li><a href="mailto:sameer.saeed@live.ca">Email Me</a></li>
-                    </ul>
-                </div>
-                <div class="resume-preview-container">
-                    <a href="https://drive.google.com/file/d/1mv8d67Tzsp_vrHaw0VzlLjGwo8H9pFcY/view?usp=drive_link" target="_blank">
-                        <img src="images/resume.png" class="resume-preview">
-                        <span>Resume</span>
-                    </a>
-                </div>
-            </div>
+    <header>
+        <h1>Sameer Saeed</h1>
+        <nav class="contact-links">
+            <a href="https://ca.linkedin.com/in/sameer-saeed-525713217" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/sameersaeed" target="_blank">GitHub</a> |
+            <a href="mailto:sameer.saeed@live.ca">Email me</a> |
+            <a href="javascript:void(0);" id="resume-link">Resume</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="about">
+            <h2>About</h2>
+            <p>
+                I'm an undergraduate student at the University of Windsor, currently completing my final year 
+                of a Bachelor of Science in Computer Science.
+            </p>
+            <p>
+                Feel free to explore my 
+                <a href="https://ca.linkedin.com/in/sameer-saeed-525713217" target="_blank">LinkedIn</a> 
+                or review my <a href="src/resume.html">resume</a> for a deeper look into my professional journey 
+                and accomplishments!
+            </p>
+        </section>
+
+        <section>
             <h2>Experience</h2>
-            <li class="experience-item">
-                <div class="experience-header">
-                    <img src="images/ibm-logo.png" class="company-logo">
-                    <div>
-                        <p><strong>Software Engineer Intern</strong></p>
-                        <span class="experience-dates">May 2023 – Present | Markham, ON</span>
-                    </div>
+            <div class="experience-item">
+                <img src="images/ibm-logo.png" class="company-logo">
+                <div>
+                    <p><strong>Software Engineer Intern</strong></p>
+                    <p class="experience-dates">May 2023 – Present | Markham, ON</p>
                 </div>
-                <ul>
-                    <li>Developed a full-stack web app to streamline ticket hand-offs, reducing manual effort by 30%.</li>
-                    <li>Built a Chrome extension to standardize text formatting, boosting notification efficiency by 50%.</li>
-                    <li>Resolved 100+ technical tickets for IBM Sterling OMS, improving proactive monitoring.</li>
-                    <li>Led a session on IBM Certified Containers with Kubernetes for 20+ engineers.</li>
-                </ul>
-            </li>
-        </div>
-        <div class="right-side">
+            </div>
+            <ul>
+                <li>Developed a full-stack web app to streamline ticket hand-offs, reducing manual effort by 30%.</li>
+                <li>Built a Chrome extension to standardize text formatting, boosting notification efficiency by 50%.</li>
+                <li>Resolved 100+ technical tickets for IBM Sterling OMS, improving proactive monitoring.</li>
+                <li>Led a session on IBM Certified Containers with Kubernetes for 20+ engineers.</li>
+            </ul>
+        </section>
+
+        <section>
             <h2>Projects</h2>
             <ul>
-                <li class="project-item">
+                <li>
                     <a href="https://github.com/sameersaeed/order-submission-tool" target="_blank">
-                        Order Submission Tool
+                        <strong>Order Submission Tool</strong>
                     </a>
                     <p>
-                        <img src="images/react-logo.png" title="React" class="project-icon">
-                        <img src="images/typescript-logo.png" title="TypeScript" class="project-icon"> 
-                        <img src="images/go-logo.png" title="Go" class="project-icon">
-                        <img src="images/mongodb-logo.png" title="MongoDB" class="project-icon">
-                        <img src="images/html-logo.png" title="HTML" class="project-icon">
-                        <img src="images/css-logo.png" title="CSS" class="project-icon">
+                        A web application designed to streamline order processing and reduce manual effort.
                     </p>
                 </li>
-                <li class="project-item">
+                <li>
                     <a href="https://github.com/sameersaeed/chip8-emulator" target="_blank">
-                        CHIP-8 Emulator
+                        <strong>CHIP-8 Emulator</strong>
                     </a>
                     <p>
-                        <img src="images/cpp-logo.png" title="C++" class="project-icon"> 
-                        <img src="images/javascript-logo.png" title="JavaScript" class="project-icon"> 
-                        <img src="images/html-logo.png" title="HTML" class="project-icon">
-                        <img src="images/css-logo.png" title="CSS" class="project-icon">
+                        A CHIP-8 emulator that runs classic games like Pong and Tetris and can be played directly in browsers.
                     </p>
                 </li>
-                <li class="project-item">
+                <li>
                     <a href="https://github.com/sameersaeed/password-manager" target="_blank">
-                        Password Manager
+                        <strong>Password Manager</strong>
                     </a>
                     <p>
-                        <img src="images/rust-logo.png" title="Rust" class="project-icon">
+                        A secure, command-line password manager built for safe storage and retrieval of user credentials.
                     </p>
                 </li>
             </ul>
+        </section>
+
+        <section>
             <h2>Open Source Contributions</h2>
-            <ul>
-                <li class="project-item">
-                    <a href="https://github.com/containerd/containerd/commits/main?author=sameersaeed" target="_blank">
-                        <img src="images/containerd-logo.png" class="project-logo">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+            <a href="https://github.com/containerd/containerd/commits/main?author=sameersaeed" target="_blank">
+                <img src="images/containerd-logo.png" class="project-logo">
+            </a>
+        </section>
+
+    </main>
+    <main>
+        <section>
+            <div id="resume-view" class="hidden">
+                <a href="javascript:void(0);" id="back-button" class="back-link">Back</a>
+                <div class="resume-content">
+                    <img src="https://lh3.googleusercontent.com/d/1mv8d67Tzsp_vrHaw0VzlLjGwo8H9pFcY" width="100%">
+                </div>
+            </div>  
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
