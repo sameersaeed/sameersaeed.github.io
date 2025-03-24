@@ -59,6 +59,7 @@ a:hover {
 
 .company-logo, .project-logo {
     height: 50px;
+    padding: 10px;
     vertical-align: middle;
 }
 
